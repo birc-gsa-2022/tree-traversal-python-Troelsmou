@@ -21,10 +21,3 @@ def in_order(t: T or None) -> Iterable[int]:
             break
 
     return output_list
-
-
-
-tree = T(2, T(1, None, None), 
-    T(4, T(3, None, None), T(5, None, None)))
-
-print(in_order(tree))
