@@ -4,6 +4,8 @@ from typing import Iterable
 from tree import T
 
 def in_order(t: T or None) -> Iterable[int]:
+    if t == None:
+        return []
     output_list = list()
     stack = list()
     current_node = t
